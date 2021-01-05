@@ -494,9 +494,9 @@ steps:
     environment:
       # increment these variables when a new major/minor version is released to bump the automatic builds
       # this only needs to be done on the master branch, as that's the branch that the Drone cron is configured for
-      CURRENT_VERSION_ROOT: v5.0
-      PREVIOUS_VERSION_ONE_ROOT: v4.4
-      PREVIOUS_VERSION_TWO_ROOT: v4.3
+      CURRENT_VERSION_ROOT: v5.1
+      PREVIOUS_VERSION_ONE_ROOT: v5.0
+      PREVIOUS_VERSION_TWO_ROOT: v4.4
     commands:
       - apk --update --no-cache add curl
       - mkdir -p /go/build && cd /go/build
@@ -3266,6 +3266,6 @@ volumes:
 
 ---
 kind: signature
-hmac: 94562d41f7ac7570afd862e945db6caf5b08462a6a4b888ea5421a5346e1788d
+hmac: a9d747aab0ad8049fe9684c0d635eced26c880c6308f3dde75a286a4894d777b
 
 ...
